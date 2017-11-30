@@ -1,0 +1,66 @@
+<section class="product-p">
+  <div class="container">
+    <div class="col-sm-3 pull-left">
+      <div class="col-sm-12">
+        <h3 class="box-title"> <%= t ".previous" %> </h3>
+        <ul>
+          <li class="item-loc"> <a href="#"><%= t ".previous" %></a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-9 pull-right">
+      <h3 class="box-title"><%= t ".previous" %></h3>
+      <ul class="list-unstyled menu-product">
+        <div class="col-sm-4">
+          <form id="frmCart">
+            <li>
+              <div>
+                <div class="ih-item circle colored effect1">
+                  <a href="#">
+                    <div class="spinner"></div>
+                    <div class="img"><img src="images/products/BCPT-01-01.png" alt="img"></div>
+                    <div class="info">
+                      <div class="info-back">
+                        <h3> <%= t ".previous" %> </h3>
+                        <p> 650.000<%= t ".previous" %></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="product-name">
+                <a href="/productDetails.do?maSanPham=BCPT-01"><%= t ".previous" %></a>
+              </div>
+              <p> 650.000₫ </p>
+              <div class="icon">
+                <a href="/them-vao-gio.do?maSanPham=BCPT-01&amp;mua=true">
+                  <button type="button" class="btn btn-default"><%= t ".previous" %></button>
+                </a>
+                <a>
+                  <button id="addBCPT-01" type="button" class="btn btn-default"
+                    onclick="cartAction('add', 'BCPT-01')"><%= t ".previous" %>
+                  </button>
+                </a>
+              </div>
+            </li>
+          </form>
+        </div>
+        <!-- end col 1 -->
+      </ul>
+      <div class="pages">
+        <a href="#">
+          <button type="button" class="btn btn-danger"><%= t ".previous" %></button>
+        </a>
+        <a href="/product.do?trangHienTai=1">
+          <button type="button" class="btn btn-default soTrang">1</button>
+        </a>
+        <a href="/product.do?trangHienTai=2">
+          <button type="button" class="btn btn-default soTrang">2</button>
+        </a>
+        <a href="#">
+          <button type="button" class="btn btn-danger"><%= t ".next" %></button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

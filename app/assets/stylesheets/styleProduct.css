@@ -1,0 +1,75 @@
+*{}
+.pages{
+  clear: both;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  margin-left: 224px;
+}
+
+iframe{
+  height: 250px;
+  width: 100%;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    height: 500px;
+}
+.product-name{
+  margin-top: 20px;
+  height: 45px;
+  overflow: hidden;
+  font-weight: bold;
+}
+.item-loc{
+  border-bottom: 1px solid rgba(204,204,204,0.5);
+}
+.std{
+  text-align: justify;
+  line-height: 30px;
+}
+#product-attribute-specs-table, #product-attribute-specs-table td{
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+#product-attribute-specs-table th{
+  font-size: 14px;
+}
+.wishlist-btn-l, .book-btn-l{
+  padding-top: 12px;
+
+}
+.book-btn:HOVER {
+  background: #ff0066;
+}
+.wishlist-btn:HOVER {
+  background: #f2f2f2;
+}
+.result{
+  margin: 0 auto;
+}
+.button-close{
+  float: right;
+  line-height: 32px;
+}
+.button-close-size{
+  font-size: 32px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  vertical-align: middle;
+}
+.button-edit{
+  border: none;
+  background: none;
+  margin: 5px 5px 5px 25px;
+}
+.button-edit:HOVER {
+  color: #0000ff;
+}
+.button-edit:VISITED {
+  border: none;
+}
+.button-edit:ACTIVE {
+  border: none;
+}

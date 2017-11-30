@@ -1,0 +1,227 @@
+<section class="slider">
+<div class="container">
+  <div class="row">
+    <div class="slideshow">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item">
+            <%= image_tag("food/12.jpg", alt: "pro") %>
+            <div class="carousel-caption">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("food/11.jpg", alt: "pro") %>
+            <div class="carousel-caption">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("food/10.jpg", alt: "pro") %>
+            <div class="carousel-caption">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="item active">
+            <%= image_tag("food/9.jpg", alt: "pro") %>
+            <div class="carousel-caption">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("food/8.jpg", alt: "pro") %>
+            <div class="carousel-caption">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("food/7.jpg", alt: "pro") %>
+            <div class="carousel-caption">
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic"
+          role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only"><%= t ".previous" %> </span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic"
+          role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only"><%= t ".previous" %> </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+      <!--producs hot-->
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="box-title-new"><%= t ".hot" %> </h3>
+        </div>
+      </div> <!--end row hot-->
+      <div class="row">
+        <div class="col-sm-4 text-center wow bounceInRight" data-wow-delay="0.4s">
+          <a href="detail.jsp" target="_blank">
+            <%= image_tag("food/12.jpg", class: "img-thumbnail zoom", alt: "pro") %>
+          </a>
+          <p><%= t ".previous" %> </p>
+        </div>
+        <div class="col-sm-4 text-center wow bounceInRight" data-wow-delay="0.6s">
+          <a href="detailt.jsp">
+            <%= image_tag("food/11.jpg", class: "img-thumbnail zoom", alt: "pro") %>
+          </a>
+          <p><%= t ".previous" %> </p>
+        </div>
+        <div class="col-sm-4 text-center wow bounceInRight" data-wow-delay="0.8s">
+          <a href="detailt.jsp">
+            <%= image_tag("food/10.jpg", class: "img-thumbnail zoom", alt: "pro") %>
+          </a>
+          <p><%= t ".previous" %> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!--end products hot-->
+</section>
+<section>
+  <!--begin table producs-->
+  <div class="product">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="box-title-new"><%= t ".foods" %> </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+<section/><!--end row topic san pham-->
+<section> <!--begin test products-->
+  <div class="products">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 parent wow bounceInRight" data-wow-delay="0.4s">
+        <!--begin first product-->
+          <div class="product1 text-center">
+            <%= image_tag("food/1.jpg", class: "img-responsive", alt: "pro") %>
+            <div class="detail">
+              <div class="titleProducts11">
+                <h3><a href="#"><%= t ".previous" %> </a></h3>
+              </div>
+              <h4>750.000₫</h4>
+              <a href="/them-vao-gio.do?maSanPham=BCPT-02&amp;mua=true">
+                <button type="button" class="btn btn-default"><%= t ".buy" %></button>
+              </a>
+              <a>
+                <button id="addBCPT-02" type="button" class="btn btn-default"
+                  onclick="cartAction('add', 'BCPT-02')"><%= t ".addtocart" %>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="nenpr <t></t>ext-center">
+            <h3><a href="/productDetails.do?maSanPham=BCPT-02"><%= t ".previous" %> </a></h3>
+            <h4>750.000₫</h4>
+            <p> </p><%= t ".previous" %> </p> <p></p>
+          </div>
+        </div>
+        <!--end first product-->
+      </div> <!--end row 1-->
+    </div>
+  </div>
+  <div class="pages">
+    <a href="#"><button type="button" class="btn btn-danger"><%= t ".previous" %> </button></a>
+    <a href="#"><button type="button" class="btn btn-default soTrang">1</button></a>
+    <a href="#"><button type="button" class="btn btn-default soTrang">2</button></a>
+    <a href="#"><button type="button" class="btn btn-danger"><%= t ".previous" %> </button></a>
+  </div>
+</section>
+<section>
+  <!--begin table producs-->
+  <div class="product">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="box-title-new"><%= t ".previous" %> </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+<section/><!--end row topic san pham-->
+<section> <!--begin test products-->
+  <div class="products">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 parent wow bounceInRight" data-wow-delay="0.4s">
+        <!--begin first product-->
+          <div class="product1 text-center">
+            <%= image_tag("drink/1.jpg", class: "img-responsive", alt: "pro") %>
+            <div class="detail">
+                <div class="tieudeProducts11">
+                  <h3><a href="/productDetails.do?maSanPham=BCPT-02"><%= t ".previous" %> </a></h3>
+                </div>
+                <h4>750.000</h4>
+                <a href="/them-vao-gio.do?maSanPham=BCPT-02&amp;mua=true">
+                  <button type="button" class="btn btn-default"><%= t ".previous" %> </button>
+                </a>
+                <a><button id="addBCPT-02" type="button" class="btn btn-default"
+                  onclick="cartAction('add', 'BCPT-02')"><%= t ".addtocart" %>
+                  </button>
+                </a>
+            </div>
+          </div>
+          <div class="nenpr <t></t>ext-center">
+              <h3><a href="/productDetails.do?maSanPham=BCPT-02"><%= t ".previous" %> </a></h3>
+              <h4>750.000</h4>
+              <p> </p><%= t ".previous" %> </p> <p></p>
+          </div>
+        </div>
+        <!--end first product-->
+      </div> <!--end row 1-->
+    </div>
+  </div>
+  <div class="pages">
+    <a href="#"><button type="button" class="btn btn-danger"><%= t ".previous" %> </button></a>
+    <a href=""><button type="button" class="btn btn-default soTrang">
+      <%= t ".previous" %> </button>
+    </a>
+    <a href="">
+      <button type="button" class="btn btn-default soTrang"><%= t ".previous" %> </button>
+    </a>
+    <a href="#">
+      <button type="button" class="btn btn-danger"><%= t ".previous" %> </button>
+    </a>
+  </div>
+</section>
+<section>
+  <div class="news">
+    <div class="container">
+      <div class="row">
+        <h3 class="text-left"><%= t ".previous" %> </h3>
+        <!-- begin first news -->
+        <div class="col-sm-3">
+          <p class="time-info wow bounceInRight" data-wow-delay="0.4s">
+            <i class="glyphicon glyphicon-time"></i>16/08/2017
+          </p>
+          <h4><%= t ".previous" %> </h4>
+          <p class="news-info"><%= t ".previous" %> </p>
+          <button type="button" class="btn btn-default btn-sm btn bt-color">
+            <%= t ".previous" %>
+          </button>
+        </div>
+        <!-- end first news -->
+      </div>
+    </div>
+  </div>
+</section>

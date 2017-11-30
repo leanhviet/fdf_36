@@ -51,4 +51,4 @@ production:
   <<: *default
   database: abc_production
   username: abc
-  password: <%= ENV['ABC_DATABASE_PASSWORD'] %>
+  password: <%= ENV["ABC_DATABASE_PASSWORD"] %>

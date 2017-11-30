@@ -1,0 +1,92 @@
+<header>
+  <div class="top-bar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="pull-left">
+            <div class="lang">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle no-boder"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <%= t ".language1" %> <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu no-boder">
+                  <li><a href="#"><%= t ".language1" %></a></li>
+                  <li><a href="#"><%= t ".language2" %></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="pull-right">
+            <ul class="list-unstyled top-links">
+              <li><a href="#"><%= t ".cart" %></a></li>
+              <li><a href="#"><%= t ".login" %></a></li>
+              <li><a href="#"><%= t ".signup" %></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 search-w">
+          <div class="col-lg-6">
+            <form name="boLocForm" method="get" action="" accept-charset="UTF-8">
+              <div class="input-group">
+                <input type="text" name="content" class="form-control">
+                <span class="input-group-btn">
+                <button class="btn btn-default search" type="submit">
+                  <i class="glyphicon glyphicon-search" ></i>
+                </button>
+              </span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- <div class="col-sm-5">
+          <div class="logo text-center">
+            <a href="#"><img src="images/logo.png" width="400" height="85"></a>
+          </div>
+        </div> -->
+        <div class="col-sm-4">
+          <div class="pull-right">
+            <div class="cart-wish-w">
+              <div class="cart-w">
+                <div class="cart-info">
+                  <span>
+                    <strong id="number-products"><%= t ".product" %></strong>
+                  </span>
+                  <a href="#" class="btn-cart glyphicon glyphicon-shopping-cart"></a>
+                </div>
+              </div>
+              <div class="wishlist-w">
+                <div class="wishlist-info">
+                  <span>
+                    <strong><%= t ".like" %></strong>
+                  </span>
+                  <a href="" class="btn-cart glyphicon glyphicon-heart">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <nav id="nav-1">
+          <%= link_to(t(".home"), root_path, class: "link-1") %>
+          <a class="link-1" href="#"><%= t ".info" %></a>
+          <%= link_to(t(".product"), product_path, class: "link-1 active") %>
+          <a class="link-1" href="#"><%= t ".help" %></a>
+          <a class="link-1" id="contact" href="#"><%= t ".contact" %></a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
