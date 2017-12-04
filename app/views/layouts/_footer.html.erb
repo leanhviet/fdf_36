@@ -1,0 +1,70 @@
+<footer>
+  <div class="container">
+    <div class="footer-style">
+      <div class="col-sm-4">
+        <h4></h4>
+        <p></p>
+      </div>
+      <div class="col-sm-4">
+        <h4></h4>
+        <p></p>
+      </div>
+      <div class="col-sm-4">
+        <h4></h4>
+        <p></p>
+      </div>
+    </div>
+    <div class="container-fluid bg-grey">
+      <div class="col-sm-12">
+        <h2 class="text-left" id="contact"><%= t ".contact" %></h2>
+        <div class="row">
+          <div class="col-sm-6 contact">
+            <form name="myform" onsubmit="return kiemtra()">
+              <label for="fname"><%= t ".name" %></label>
+              <input type="text" id="fname" name="ten">
+              <label for="fname"><%= t ".email" %></label>
+              <input type="text" id="fname" name="email">
+              <label for="subject"><%= t ".content" %></label>
+              <textarea id="subject" name="subject"></textarea>
+              <input type="submit" value="<%= (t(".send")) %>">
+            </form>
+          </div>
+          <div class="col-sm-6 maps">
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.6759957432687!2d108.26096071429555!3d15.978287846114126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314210f2d038af0f%3A0x51c64b1130497f99!2sFPT+Complex+Building!5e0!3m2!1svi!2s!4v1502524830611" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <row>
+          <div class="col-sm-4">
+            <br>
+            <p"></p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> </p>
+            <p><span class="glyphicon glyphicon-phone"></span> </p>
+            <p><span class="glyphicon glyphicon-envelope"></span> </p>
+          </div>
+          <div class="col-sm-4">
+            <br>
+            <p"></p>
+            <p><span class="glyphicon glyphicon-map-marker"></span></p>
+            <p><span class="glyphicon glyphicon-phone"></span></p>
+            <p><span class="glyphicon glyphicon-envelope"></span> </p>
+          </div>
+          <div class="col-sm-4">
+            <br>
+            <p"></p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> </p>
+            <p><span class="glyphicon glyphicon-phone"></span> </p>
+            <p><span class="glyphicon glyphicon-envelope"></span></p>
+          </div>
+        </row>
+      </div>
+    </div>
+    <div class="copyright text-center">
+      <div class="col-sm-12 ">
+        <br><br>
+        <p><%= t ".footer" %></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<a id="top1111" href="#" class="scrollup"><%= t ".scroll" %></a>
