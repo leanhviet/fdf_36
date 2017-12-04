@@ -77,9 +77,12 @@ en:
       login: "Log in"
       logout: "Log out"
       signup: "Sign up"
+      settings: "Settings"
+      profile: "Profile"
       product: "Product"
       like: "Like"
       home: "Home"
+      users: "Users"
       info: "Information"
       help: "Help Us"
       contact: "Contact"
@@ -92,3 +95,29 @@ en:
       footer: "Copyright @ 2017 - Design by me"
       scroll: "Scroll"
       send: "Send"
+  sessions:
+    new:
+      signin: "Sign in"
+      remember: "Remember me"
+      login: "Log in"
+      signup: "Sign up now"
+      newuser: "New User"
+  shared:
+    error_messages:
+      error: "error"
+      content: "The form contains"
+  users:
+    new:
+      signup: "Sign up"
+      confirm: "Confirm"
+      gender: "gender"
+      submit: "Submit"
+      male: "Male"
+      female: "Female"
+  controllers:
+    sessions:
+      welcome: "Welcome"
+      erorr: "Sign in Erorr"
+    users:
+      welcome: "Welcome"
+      registererorr: "Sign up erorr"
