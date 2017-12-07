@@ -12,12 +12,14 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :address, presence: true, length: {maximum: Settings.maximum.length_email}
   has_secure_password
-  validates :password, presence: true, length: {minimum: Settings.minimun.length_pass}
+  validates :password, presence: true, length: {minimum: Settings.minimun.length_pass},
+    allow_blank: true
+
+  mount_uploader :avatar, ImageUploader
 
   class << self
     def digest string
-      cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
-        BCrypt::Engine.cost
+      cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
       BCrypt::Password.create string, cost: cost
     end
 

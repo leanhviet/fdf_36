@@ -114,6 +114,17 @@ en:
       submit: "Submit"
       male: "Male"
       female: "Female"
+  profiles:
+    edit:
+      update: "Update"
+      profile: "Profile"
+      cart: "Cart"
+      history: "History"
+      myavatar: "My avatar"
+      information: "Information Update"
+      male: "Male"
+      female: "Female"
+      errorimg: "prohibited this pet from being saved:"
   controllers:
     sessions:
       welcome: "Welcome"
@@ -121,3 +132,7 @@ en:
     users:
       welcome: "Welcome"
       registererorr: "Sign up erorr"
+    profiles:
+      errornil: "Have you logged in yet?"
+      erorr: "Sign in Erorr"
+      success: "Update Successfully"
