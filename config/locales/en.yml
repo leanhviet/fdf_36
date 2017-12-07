@@ -114,6 +114,16 @@ en:
       submit: "Submit"
       male: "Male"
       female: "Female"
+  profiles:
+    edit:
+      update: "Update"
+      profile: "Profile"
+      cart: "Cart"
+      history: "History"
+      myavatar: "My avatar"
+      information: "Information Update"
+      male: "Male"
+      female: "Female"
   controllers:
     sessions:
       welcome: "Welcome"

@@ -1,0 +1,124 @@
+<section id="section-profile">
+  <div class="bs-example">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#sectionA"><%= t ".profile" %></a></li>
+      <li><a data-toggle="tab" href="#sectionB"><%= t ".cart" %></a></li>
+      <li><a data-toggle="tab" href="#sectionC"><%= t ".history" %></a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="sectionA" class="tab-pane fade in active">
+        <div id="about" class="container">
+          <h2 class="heading-title">
+            <span class="glyphicon glyphicon-user icon-heading"><%= t ".profile" %></span>
+          </h2>
+          <br>
+          <div class="row">
+            <%= form_for @user, url: edit_profile_path(current_user),
+              method: :patch, html: { multipart: true } do |f| %>
+              <% if @user.errors.any? %>
+                <div id="error_explanation">
+                  <h2><%= pluralize(@user.errors.count, "error") %> prohibited this pet from being saved:</h2>
+
+                  <ul>
+                  <% @user.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                  <% end %>
+                  </ul>
+                </div>
+              <% end %>
+              <div class="col-sm-4 text-center box-profile">
+                <div class="thumbnail img-profile">
+                  <% if f.object.avatar? %>
+                    <%= image_tag f.object.avatar.thumb.url %>
+                  <% end %>
+                  <%= f.label :avatar %><br>
+                  <%= f.file_field :avatar %>
+                </div>
+              </div>
+              <div class="col-sm-5 col-sm-push-2 info-profile">
+                <h3 class="text-center"><%= t ".information" %></h3>
+                <br>
+                <div class="col-md-12">
+                  <div class="form-group item">
+                    <%= f.label :name %>
+                    <%= f.text_field :name, class: "form-control" %>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group item">
+                    <%= f.label :email %>
+                    <%= f.text_field :email, class: "form-control" %>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group item">
+                    <%= f.label :gender, (t ".male")  %>
+                    <%= f.radio_button :gender, true, checked: true %>
+                    <%= f.label :gender, (t ".female") %>
+                    <%= f.radio_button :gender, false %>
+                  </div>
+                </div>
+                <br>
+                <div class="col-md-12">
+                  <div class="form-group item">
+                    <%= f.label :address %>
+                    <%= f.text_field :address, class: "form-control" %>
+                  </div>
+                </div>
+                <%= f.submit (t ".update"), class: "btn btn-primary" %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div id="sectionB" class="tab-pane fade">
+        <div class="container">
+          <h2 class="heading-title">
+          <span class="glyphicon glyphicon-th-list icon-heading"></span><%= t ".cart" %></h2>
+          <table class="table">
+            <thead>
+                <tr>
+                  <th><%= t ".cart" %></th>
+                  <th><%= t ".cart" %></th>
+                  <th><%= t ".cart" %></th>
+                  <th><%= t ".cart" %></th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="sectionC" class="tab-pane fade">
+        <div class="container">
+          <h2 class="heading-title">
+            <span class="glyphicon glyphicon-th-list icon-heading"></span><%= t ".history" %>
+          </h2>
+          <table class="table">
+            <thead>
+                <tr>
+                  <th><%= t ".history" %></th>
+                  <th><%= t ".history" %></th>
+                  <th><%= t ".history" %></th>
+                  <th><%= t ".history" %></th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br>
