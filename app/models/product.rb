@@ -3,4 +3,6 @@ class Product < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :order_details, dependent: :destroy
   has_many :ratings, dependent: :destroy
+
+  scope :sort_products, ->{order name: :asc}
 end

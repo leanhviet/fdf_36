@@ -84,6 +84,16 @@ img.imgSmall.img-responsive {
   color: red;
 }
 
+body.displayLogin{
+  background: url(/assets/banner-slider-3.jpg);
+  background-size: cover;
+}
+
+.col-sm-6.col-sm-push-3.formlogin {
+  background-color: white;
+  margin-top: 100px;
+}
+
 .products .nenpr h2 {
   color: rgba(0, 128, 0, 0.57);
 }

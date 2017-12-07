@@ -1,0 +1,25 @@
+<h1 class="text-center"><%= t ".signup" %></h1>
+<div class="row">
+  <div class="col-md-12">
+    <%= form_for @user do |f| %>
+      <%= render "shared/error_messages" %>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control" %>
+      <%= f.label :password_confirmation, (t ".confirm") %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+      <%= f.label :address %>
+      <%= f.text_field :address, class: "form-control" %>
+      <%= f.label :gender, (t ".male")  %>
+      <%= f.radio_button :gender, true, checked: true %>
+      <%= f.label :gender, (t ".female") %>
+      <%= f.radio_button :gender, false %>
+      <br>
+      <%= f.submit (t ".submit"), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+<br/>
